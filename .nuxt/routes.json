@@ -1,0 +1,71 @@
+[
+  {
+    "name": "prismic-preview",
+    "path": "/preview",
+    "component": "/Users/paul/gallery/.nuxt/prismic/pages/preview.vue",
+    "_name": "_253aed82"
+  },
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/paul/gallery/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_13c2bdd4"
+  },
+  {
+    "name": "canvas",
+    "path": "/canvas",
+    "component": "/Users/paul/gallery/pages/canvas.vue",
+    "chunkName": "pages/canvas",
+    "_name": "_5b6edec2"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/paul/gallery/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_2910f02e"
+  },
+  {
+    "name": "exhibitions",
+    "path": "/exhibitions",
+    "component": "/Users/paul/gallery/pages/exhibitions.vue",
+    "chunkName": "pages/exhibitions",
+    "_name": "_4e1f35cd"
+  },
+  {
+    "name": "gallery",
+    "path": "/gallery",
+    "component": "/Users/paul/gallery/pages/gallery.vue",
+    "chunkName": "pages/gallery",
+    "_name": "_68ebf21b"
+  },
+  {
+    "name": "giclee",
+    "path": "/giclee",
+    "component": "/Users/paul/gallery/pages/giclee.vue",
+    "chunkName": "pages/giclee",
+    "_name": "_7816af1c"
+  },
+  {
+    "name": "press",
+    "path": "/press",
+    "component": "/Users/paul/gallery/pages/press/index.vue",
+    "chunkName": "pages/press/index",
+    "_name": "_3ec9144f"
+  },
+  {
+    "name": "press-uid",
+    "path": "/press/:uid",
+    "component": "/Users/paul/gallery/pages/press/_uid.vue",
+    "chunkName": "pages/press/_uid",
+    "_name": "_13093324"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/paul/gallery/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_15d67bdb"
+  }
+]

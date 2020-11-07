@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d83998ad-c4a3-4cf9-8d54-842994f49b53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Articles.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Carousel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Grid.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Top.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/crawler/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/crawler/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/static/plugin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/about.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/canvas.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contact.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/exhibitions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/gallery.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/giclee.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/aos.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WqKCLYvN09GRHxo0xsfAnkyV55" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d83998ad-c4a3-4cf9-8d54-842994f49b53" name="Default Changelist" comment="" />
+      <created>1579871555114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579871555114</updated>
+      <workItem from="1579871560566" duration="5549000" />
+      <workItem from="1580116697937" duration="18071000" />
+      <workItem from="1580214851648" duration="8878000" />
+      <workItem from="1580286744772" duration="5120000" />
+      <workItem from="1580296868395" duration="9925000" />
+      <workItem from="1580375870055" duration="12629000" />
+      <workItem from="1580459162054" duration="3484000" />
+      <workItem from="1580463104944" duration="23655000" />
+      <workItem from="1580558377014" duration="4295000" />
+      <workItem from="1580718055646" duration="22759000" />
+      <workItem from="1580747666881" duration="886000" />
+      <workItem from="1580805963371" duration="16383000" />
+      <workItem from="1580893300641" duration="19973000" />
+      <workItem from="1580914627590" duration="2756000" />
+      <workItem from="1580978131435" duration="15368000" />
+      <workItem from="1581066980296" duration="9832000" />
+      <workItem from="1581166823262" duration="59000" />
+      <workItem from="1581412444318" duration="13317000" />
+      <workItem from="1581428996960" duration="5232000" />
+      <workItem from="1581505707140" duration="304000" />
+      <workItem from="1581589047066" duration="221000" />
+      <workItem from="1581589563697" duration="8123000" />
+      <workItem from="1581680647408" duration="28000" />
+      <workItem from="1582724952275" duration="5394000" />
+      <workItem from="1582793785881" duration="3556000" />
+      <workItem from="1583228589539" duration="646000" />
+      <workItem from="1583229249536" duration="32000" />
+      <workItem from="1583229364552" duration="9521000" />
+      <workItem from="1583313867975" duration="8633000" />
+      <workItem from="1583395398697" duration="10995000" />
+      <workItem from="1583916550134" duration="39000" />
+      <workItem from="1586164086307" duration="224000" />
+      <workItem from="1587021467489" duration="13476000" />
+      <workItem from="1587110018999" duration="8492000" />
+      <workItem from="1587455316196" duration="47000" />
+      <workItem from="1589197869885" duration="2640000" />
+      <workItem from="1589268540403" duration="3970000" />
+      <workItem from="1589289072311" duration="1431000" />
+      <workItem from="1589353555924" duration="9718000" />
+      <workItem from="1589544382289" duration="3860000" />
+      <workItem from="1589872504166" duration="3616000" />
+      <workItem from="1589958473317" duration="4836000" />
+      <workItem from="1590488451122" duration="1429000" />
+      <workItem from="1591963105000" duration="11000" />
+      <workItem from="1594902015236" duration="804000" />
+      <workItem from="1603276157956" duration="3228000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="848" y="232" key="#Notifications" timestamp="1580718080503">
+      <screen x="0" y="23" width="2048" height="1042" />
+    </state>
+    <state x="848" y="232" key="#Notifications/0.23.2048.1042@0.23.2048.1042" timestamp="1580718080503" />
+    <state x="779" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580558442904">
+      <screen x="0" y="23" width="2048" height="1042" />
+    </state>
+    <state x="779" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2048.1042@0.23.2048.1042" timestamp="1580558442904" />
+    <state x="1322" y="284" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580743063001">
+      <screen x="0" y="23" width="2048" height="1042" />
+    </state>
+    <state x="1322" y="284" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1042@0.23.2048.1042" timestamp="1580743063001" />
+    <state x="798" y="264" key="IDE.errors.dialog" timestamp="1581416288468">
+      <screen x="0" y="23" width="2048" height="1042" />
+    </state>
+    <state x="798" y="264" key="IDE.errors.dialog/0.23.2048.1042@0.23.2048.1042" timestamp="1581416288468" />
+  </component>
+</project>
