@@ -11,14 +11,14 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_45d3ee82 from 'nuxt_plugin_workbox_45d3ee82' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_NuxtVuikit_c2064f7a from 'nuxt_plugin_NuxtVuikit_c2064f7a' // Source: ./Nuxt-Vuikit.js (mode: 'all')
-import nuxt_plugin_prismic_438da661 from 'nuxt_plugin_prismic_438da661' // Source: ./prismic/plugins/prismic.js (mode: 'all')
-import nuxt_plugin_prismiccomponents_5ab5d56a from 'nuxt_plugin_prismiccomponents_5ab5d56a' // Source: ./prismic/plugins/prismic-components.js (mode: 'all')
-import nuxt_plugin_prismicpreview_1600d11a from 'nuxt_plugin_prismicpreview_1600d11a' // Source: ./prismic/middleware/prismic_preview.js (mode: 'all')
-import nuxt_plugin_crawlerplugin1febcf1d_50233350 from 'nuxt_plugin_crawlerplugin1febcf1d_50233350' // Source: ./crawler.plugin.1febcf1d.js (mode: 'all')
-import nuxt_plugin_staticplugin28cca68f_4e6dec31 from 'nuxt_plugin_staticplugin28cca68f_4e6dec31' // Source: ./static.plugin.28cca68f.js (mode: 'all')
-import nuxt_plugin_buefy_5fab1fb4 from 'nuxt_plugin_buefy_5fab1fb4' // Source: ./buefy.js (mode: 'all')
+import nuxt_plugin_workbox_cd719848 from 'nuxt_plugin_workbox_cd719848' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_NuxtVuikit_3a392ce0 from 'nuxt_plugin_NuxtVuikit_3a392ce0' // Source: ./Nuxt-Vuikit.js (mode: 'all')
+import nuxt_plugin_prismic_2946f77e from 'nuxt_plugin_prismic_2946f77e' // Source: ./prismic/plugins/prismic.js (mode: 'all')
+import nuxt_plugin_prismiccomponents_2860bfa6 from 'nuxt_plugin_prismiccomponents_2860bfa6' // Source: ./prismic/plugins/prismic-components.js (mode: 'all')
+import nuxt_plugin_prismicpreview_b1cac846 from 'nuxt_plugin_prismicpreview_b1cac846' // Source: ./prismic/middleware/prismic_preview.js (mode: 'all')
+import nuxt_plugin_crawlerplugine5a656c0_94432a7c from 'nuxt_plugin_crawlerplugine5a656c0_94432a7c' // Source: ./crawler.plugin.e5a656c0.js (mode: 'all')
+import nuxt_plugin_staticplugin6e6364ac_6e4e0551 from 'nuxt_plugin_staticplugin6e6364ac_6e4e0551' // Source: ./static.plugin.6e6364ac.js (mode: 'all')
+import nuxt_plugin_buefy_61766e11 from 'nuxt_plugin_buefy_61766e11' // Source: ./buefy.js (mode: 'all')
 import nuxt_plugin_aos_2279b4c6 from 'nuxt_plugin_aos_2279b4c6' // Source: ../plugins/aos.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -58,7 +58,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Kat Lightfoot","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Kat Lightfoot Paintings"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"gallery"},{"hid":"author","name":"author","content":"imwd"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"gallery"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"gallery"},{"hid":"og:description","name":"og:description","property":"og:description","content":"kat lightfoot gallery"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fanimate.css\u002F3.7.2\u002Fanimate.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fgh\u002Ffancyapps\u002Ffancybox@3.5.7\u002Fdist\u002Fjquery.fancybox.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.typekit.net\u002Fzbx2mkf.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002F\u002Fcdn.materialdesignicons.com\u002F5.0.45\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.e6672fd6.json"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.3.1.slim.min.js","defer":true},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fgh\u002Ffancyapps\u002Ffancybox@3.5.7\u002Fdist\u002Fjquery.fancybox.min.js","defer":true}],"style":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Kat Lightfoot","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Kat Lightfoot Paintings"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Kat Lightfoot"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fanimate.css\u002F3.7.2\u002Fanimate.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fgh\u002Ffancyapps\u002Ffancybox@3.5.7\u002Fdist\u002Fjquery.fancybox.min.css"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.typekit.net\u002Fzbx2mkf.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002F\u002Fcdn.materialdesignicons.com\u002F5.0.45\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.60427cc1.json"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.3.1.slim.min.js","defer":true},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fgh\u002Ffancyapps\u002Ffancybox@3.5.7\u002Fdist\u002Fjquery.fancybox.min.js","defer":true}],"style":[],"htmlAttrs":{"lang":"en"}},
 
     router,
     nuxt: {
@@ -172,36 +172,36 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_45d3ee82 === 'function') {
-    await nuxt_plugin_workbox_45d3ee82(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_cd719848 === 'function') {
+    await nuxt_plugin_workbox_cd719848(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_NuxtVuikit_c2064f7a === 'function') {
-    await nuxt_plugin_NuxtVuikit_c2064f7a(app.context, inject)
+  if (typeof nuxt_plugin_NuxtVuikit_3a392ce0 === 'function') {
+    await nuxt_plugin_NuxtVuikit_3a392ce0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_prismic_438da661 === 'function') {
-    await nuxt_plugin_prismic_438da661(app.context, inject)
+  if (typeof nuxt_plugin_prismic_2946f77e === 'function') {
+    await nuxt_plugin_prismic_2946f77e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_prismiccomponents_5ab5d56a === 'function') {
-    await nuxt_plugin_prismiccomponents_5ab5d56a(app.context, inject)
+  if (typeof nuxt_plugin_prismiccomponents_2860bfa6 === 'function') {
+    await nuxt_plugin_prismiccomponents_2860bfa6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_prismicpreview_1600d11a === 'function') {
-    await nuxt_plugin_prismicpreview_1600d11a(app.context, inject)
+  if (typeof nuxt_plugin_prismicpreview_b1cac846 === 'function') {
+    await nuxt_plugin_prismicpreview_b1cac846(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_crawlerplugin1febcf1d_50233350 === 'function') {
-    await nuxt_plugin_crawlerplugin1febcf1d_50233350(app.context, inject)
+  if (typeof nuxt_plugin_crawlerplugine5a656c0_94432a7c === 'function') {
+    await nuxt_plugin_crawlerplugine5a656c0_94432a7c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_staticplugin28cca68f_4e6dec31 === 'function') {
-    await nuxt_plugin_staticplugin28cca68f_4e6dec31(app.context, inject)
+  if (typeof nuxt_plugin_staticplugin6e6364ac_6e4e0551 === 'function') {
+    await nuxt_plugin_staticplugin6e6364ac_6e4e0551(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_buefy_5fab1fb4 === 'function') {
-    await nuxt_plugin_buefy_5fab1fb4(app.context, inject)
+  if (typeof nuxt_plugin_buefy_61766e11 === 'function') {
+    await nuxt_plugin_buefy_61766e11(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_aos_2279b4c6 === 'function') {

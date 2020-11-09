@@ -1509,25 +1509,25 @@ if (false) {}
 
 
 
-const _253aed82 = () => interopDefault(__webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 40)));
+const _36dc2082 = () => interopDefault(__webpack_require__.e(/* import() */ 10).then(__webpack_require__.bind(null, 40)));
 
-const _13c2bdd4 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 41)));
+const _2dbd1e59 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 41)));
 
-const _5b6edec2 = () => interopDefault(__webpack_require__.e(/* import() | pages/canvas */ 2).then(__webpack_require__.bind(null, 42)));
+const _e30c8888 = () => interopDefault(__webpack_require__.e(/* import() | pages/canvas */ 2).then(__webpack_require__.bind(null, 42)));
 
-const _2910f02e = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 3).then(__webpack_require__.bind(null, 43)));
+const _95287f28 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 3).then(__webpack_require__.bind(null, 43)));
 
-const _4e1f35cd = () => interopDefault(__webpack_require__.e(/* import() | pages/exhibitions */ 4).then(__webpack_require__.bind(null, 44)));
+const _1a6d74d0 = () => interopDefault(__webpack_require__.e(/* import() | pages/exhibitions */ 4).then(__webpack_require__.bind(null, 44)));
 
-const _68ebf21b = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 5).then(__webpack_require__.bind(null, 45)));
+const _32e02a9e = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 5).then(__webpack_require__.bind(null, 45)));
 
-const _7816af1c = () => interopDefault(__webpack_require__.e(/* import() | pages/giclee */ 6).then(__webpack_require__.bind(null, 46)));
+const _ffb458e2 = () => interopDefault(__webpack_require__.e(/* import() | pages/giclee */ 6).then(__webpack_require__.bind(null, 46)));
 
-const _3ec9144f = () => interopDefault(__webpack_require__.e(/* import() | pages/press/index */ 9).then(__webpack_require__.bind(null, 38)));
+const _0b175352 = () => interopDefault(__webpack_require__.e(/* import() | pages/press/index */ 9).then(__webpack_require__.bind(null, 38)));
 
-const _13093324 = () => interopDefault(__webpack_require__.e(/* import() | pages/press/_uid */ 8).then(__webpack_require__.bind(null, 47)));
+const _a374f07e = () => interopDefault(__webpack_require__.e(/* import() | pages/press/_uid */ 8).then(__webpack_require__.bind(null, 47)));
 
-const _15d67bdb = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 7).then(__webpack_require__.bind(null, 39))); // TODO: remove in Nuxt 3
+const _4d74f91e = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 7).then(__webpack_require__.bind(null, 39))); // TODO: remove in Nuxt 3
 
 
 const emptyFn = () => {};
@@ -1547,43 +1547,43 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/preview",
-    component: _253aed82,
+    component: _36dc2082,
     name: "prismic-preview"
   }, {
     path: "/about",
-    component: _13c2bdd4,
+    component: _2dbd1e59,
     name: "about"
   }, {
     path: "/canvas",
-    component: _5b6edec2,
+    component: _e30c8888,
     name: "canvas"
   }, {
     path: "/contact",
-    component: _2910f02e,
+    component: _95287f28,
     name: "contact"
   }, {
     path: "/exhibitions",
-    component: _4e1f35cd,
+    component: _1a6d74d0,
     name: "exhibitions"
   }, {
     path: "/gallery",
-    component: _68ebf21b,
+    component: _32e02a9e,
     name: "gallery"
   }, {
     path: "/giclee",
-    component: _7816af1c,
+    component: _ffb458e2,
     name: "giclee"
   }, {
     path: "/press",
-    component: _3ec9144f,
+    component: _0b175352,
     name: "press"
   }, {
     path: "/press/:uid",
-    component: _13093324,
+    component: _a374f07e,
     name: "press-uid"
   }, {
     path: "/",
-    component: _15d67bdb,
+    component: _4d74f91e,
     name: "index"
   }],
   fallback: false
@@ -1759,7 +1759,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "182d6a10"
+  "e9542220"
   
 )
 
@@ -2063,7 +2063,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "38d22344"
+  "f8261fb8"
   
 )
 
@@ -2169,7 +2169,7 @@ var Top_component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "53e690f5"
+  "f630bfd6"
   
 )
 
@@ -2205,7 +2205,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "6f86ef5c"
+  "9145459c"
   
 )
 
@@ -2594,7 +2594,7 @@ _nuxt_middleware.prismic_preview = async ({
   const Components = getMatchedComponents(route);
   Components.forEach(Component => Component.options.static = false);
 };
-// CONCATENATED MODULE: ./.nuxt/crawler.plugin.1febcf1d.js
+// CONCATENATED MODULE: ./.nuxt/crawler.plugin.e5a656c0.js
 
 
 if (true) {
@@ -2617,7 +2617,7 @@ if (true) {
     });
   }
 }
-// CONCATENATED MODULE: ./.nuxt/static.plugin.28cca68f.js
+// CONCATENATED MODULE: ./.nuxt/static.plugin.6e6364ac.js
 
 
 
@@ -2704,9 +2704,9 @@ external_vue_default.a.use(external_buefy_default.a, {
 
  // Source: ./prismic/middleware/prismic_preview.js (mode: 'all')
 
- // Source: ./crawler.plugin.1febcf1d.js (mode: 'all')
+ // Source: ./crawler.plugin.e5a656c0.js (mode: 'all')
 
- // Source: ./static.plugin.28cca68f.js (mode: 'all')
+ // Source: ./static.plugin.6e6364ac.js (mode: 'all')
 
  // Source: ./buefy.js (mode: 'all')
 
@@ -2769,11 +2769,7 @@ async function createApp(ssrContext, config = {}) {
       }, {
         "hid": "apple-mobile-web-app-title",
         "name": "apple-mobile-web-app-title",
-        "content": "gallery"
-      }, {
-        "hid": "author",
-        "name": "author",
-        "content": "imwd"
+        "content": "Kat Lightfoot"
       }, {
         "hid": "theme-color",
         "name": "theme-color",
@@ -2783,21 +2779,6 @@ async function createApp(ssrContext, config = {}) {
         "name": "og:type",
         "property": "og:type",
         "content": "website"
-      }, {
-        "hid": "og:title",
-        "name": "og:title",
-        "property": "og:title",
-        "content": "gallery"
-      }, {
-        "hid": "og:site_name",
-        "name": "og:site_name",
-        "property": "og:site_name",
-        "content": "gallery"
-      }, {
-        "hid": "og:description",
-        "name": "og:description",
-        "property": "og:description",
-        "content": "kat lightfoot gallery"
       }],
       "link": [{
         "rel": "icon",
@@ -2818,7 +2799,7 @@ async function createApp(ssrContext, config = {}) {
         "href": "\u002F\u002Fcdn.materialdesignicons.com\u002F5.0.45\u002Fcss\u002Fmaterialdesignicons.min.css"
       }, {
         "rel": "manifest",
-        "href": "\u002F_nuxt\u002Fmanifest.e6672fd6.json"
+        "href": "\u002F_nuxt\u002Fmanifest.60427cc1.json"
       }],
       "script": [{
         "src": "https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.3.1.slim.min.js",
@@ -2970,12 +2951,12 @@ async function createApp(ssrContext, config = {}) {
     await /* Cannot get final name for export "default" in "./.nuxt/prismic/middleware/prismic_preview.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
   }
 
-  if (typeof /* Cannot get final name for export "default" in "./.nuxt/crawler.plugin.1febcf1d.js" (known exports: , known reexports: ) */ undefined === 'function') {
-    await /* Cannot get final name for export "default" in "./.nuxt/crawler.plugin.1febcf1d.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
+  if (typeof /* Cannot get final name for export "default" in "./.nuxt/crawler.plugin.e5a656c0.js" (known exports: , known reexports: ) */ undefined === 'function') {
+    await /* Cannot get final name for export "default" in "./.nuxt/crawler.plugin.e5a656c0.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
   }
 
-  if (typeof /* Cannot get final name for export "default" in "./.nuxt/static.plugin.28cca68f.js" (known exports: , known reexports: ) */ undefined === 'function') {
-    await /* Cannot get final name for export "default" in "./.nuxt/static.plugin.28cca68f.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
+  if (typeof /* Cannot get final name for export "default" in "./.nuxt/static.plugin.6e6364ac.js" (known exports: , known reexports: ) */ undefined === 'function') {
+    await /* Cannot get final name for export "default" in "./.nuxt/static.plugin.6e6364ac.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
   }
 
   if (typeof /* Cannot get final name for export "default" in "./.nuxt/buefy.js" (known exports: , known reexports: ) */ undefined === 'function') {

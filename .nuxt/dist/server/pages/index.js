@@ -58,7 +58,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "ba71ed20"
+  "8c9b2360"
   
 )
 
@@ -131,7 +131,7 @@ var pages_component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "1eefcfde"
+  "8b03d684"
   
 )
 

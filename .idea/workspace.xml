@@ -11,21 +11,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83998ad-c4a3-4cf9-8d54-842994f49b53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Articles.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Carousel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Grid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Top.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/crawler/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/crawler/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/static/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/static/plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/about.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/canvas.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/exhibitions.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/gallery.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/giclee.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/aos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/crawler.plugin.1febcf1d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/client/app.043226f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/client/manifest.e6672fd6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/10.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/10.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/10.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/client.manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/index.spa.html" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/index.spa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/about.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/about.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/canvas.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/canvas.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/contact.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/contact.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/exhibitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/exhibitions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/exhibitions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/exhibitions.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/gallery.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/gallery.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/giclee.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/giclee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/giclee.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/giclee.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/_uid.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/_uid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/_uid.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/_uid.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/pages/press/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/dist/server/server.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/dist/server/server.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/routes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/routes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/static.plugin.28cca68f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/.nojekyll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/200.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/13.7fe7d3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/14.169b8fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/4f35216ba1b8d639fcfff0401bc77289.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/97e5aac851eae680c67c4978aebb7a6f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/LICENSES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/app.043226f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/commons/app.8dc4874.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/manifest.e6672fd6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/about.5fa3113.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/canvas.75a7ef8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/contact.5988789.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/exhibitions.7652d21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/gallery.5547d5e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/giclee.f86069f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/index.e98f7e5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/press/_uid.6690484.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/pages/press/index.f7baa7e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/runtime.6ca8d7e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/_nuxt/vendors~app.8a97b0f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/canvas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/canvas/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/canvas/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contact/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contact/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contact/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/exhibitions/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/exhibitions/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/exhibitions/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/gallery/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/gallery/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/gallery/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/giclee/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/giclee/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/giclee/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/brother-and-sister-join-artistic-forces/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/brother-and-sister-join-artistic-forces/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/brother-and-sister-join-artistic-forces/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/moorland-views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/moorland-views/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/moorland-views/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/the-eye-of-the-kat/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/the-eye-of-the-kat/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/press/the-eye-of-the-kat/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/preview/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/preview/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/preview/payload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sw.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +196,7 @@
       <workItem from="1591963105000" duration="11000" />
       <workItem from="1594902015236" duration="804000" />
       <workItem from="1603276157956" duration="3228000" />
+      <workItem from="1604912413499" duration="318000" />
     </task>
     <servers />
   </component>
