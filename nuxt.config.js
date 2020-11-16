@@ -1,5 +1,4 @@
 export default {
-  mode: "universal",
   head: {
     title: "Kat Lightfoot",
     meta: [

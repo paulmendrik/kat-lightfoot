@@ -14,7 +14,13 @@ export default async (context, inject) => {
     options.req = req
   }
 
-  let api = await Prismic.api('https://lightfoot.cdn.prismic.io/api/v2', Object.assign({}, options,  {}))
+  let api = {}
+  try {
+    api = await Prismic.api('https://lightfoot.cdn.prismic.io/api/v2', Object.assign({}, options,  {}))
+  } catch (error) {
+    console.error(error)
+    console.error("Failed to init Prismic API, preventing app fatal error.")
+  }
 
   let prismic = new Vue({
     computed: {
@@ -62,10 +68,14 @@ export default async (context, inject) => {
 
       async preview() {
         let url = '/'
-        const { token } = query
+        const { token, documentId } = query
 
         if (token) {
-          url = await this.api.previewSession(token, this.linkResolver, '/')
+          const previewResolver = await this.api.getPreviewResolver(token, documentId)
+          const maybeUrl = await previewResolver.resolve(this.linkResolver, '/')
+          if (maybeUrl) {
+            url = maybeUrl
+          }
         }
         if (process.server) {
           redirect(302, url)

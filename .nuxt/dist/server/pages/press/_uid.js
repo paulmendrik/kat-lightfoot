@@ -1,14 +1,14 @@
 exports.ids = [8];
 exports.modules = {
 
-/***/ 35:
+/***/ 36:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "4f35216ba1b8d639fcfff0401bc77289.svg";
+module.exports = __webpack_require__.p + "3a07d32c751c0f67e8ebf49a6ae3d6e7.svg";
 
 /***/ }),
 
-/***/ 47:
+/***/ 49:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ module.exports = __webpack_require__.p + "4f35216ba1b8d639fcfff0401bc77289.svg";
 __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/press/_uid.vue?vue&type=template&id=203cf880&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"columns is-centered"},[_vm._ssrNode("<div class=\"column main\">","</div>",[_vm._ssrNode("<div class=\"title\"><h1>Press</h1></div> "),_vm._ssrNode("<div class=\"columns press\">","</div>",[_vm._ssrNode("<div class=\"column is-two-fifths\"><figure class=\"image\"><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+"></figure></div> "),_vm._ssrNode("<div class=\"column is-three-fifths\">","</div>",[_c('prismic-rich-text',{staticClass:"article-title",attrs:{"field":_vm.document.title}}),_vm._ssrNode(" "),_c('prismic-rich-text',{staticClass:"publication",attrs:{"field":_vm.document.publication}}),_vm._ssrNode(" "),_c('prismic-rich-text',{attrs:{"field":_vm.document.intro}}),_vm._ssrNode(" "),_c('prismic-rich-text',{attrs:{"field":_vm.document.main}}),_vm._ssrNode(" <a class=\"button\">Back</a>")],2)],2)],2)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"columns is-centered"},[_vm._ssrNode("<div class=\"column main\">","</div>",[_vm._ssrNode("<div class=\"title\"><h1>Press</h1></div> "),_vm._ssrNode("<div class=\"columns press\">","</div>",[_vm._ssrNode("<div class=\"column is-two-fifths\"><figure class=\"image\"><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+"></figure></div> "),_vm._ssrNode("<div class=\"column is-three-fifths\">","</div>",[_c('prismic-rich-text',{staticClass:"article-title",attrs:{"field":_vm.document.title}}),_vm._ssrNode(" "),_c('prismic-rich-text',{staticClass:"publication",attrs:{"field":_vm.document.publication}}),_vm._ssrNode(" "),_c('prismic-rich-text',{attrs:{"field":_vm.document.intro}}),_vm._ssrNode(" "),_c('prismic-rich-text',{attrs:{"field":_vm.document.main}}),_vm._ssrNode(" <a class=\"button\">Back</a>")],2)],2)],2)])}
 var staticRenderFns = []
 
 
