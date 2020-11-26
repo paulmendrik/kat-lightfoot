@@ -1,0 +1,29 @@
+{
+  "entry": "server.js",
+  "files": {
+    "10.js": "10.js",
+    "pages/about.js": "pages/about.js",
+    "pages/canvas.js": "pages/canvas.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/exhibitions.js": "pages/exhibitions.js",
+    "pages/gallery.js": "pages/gallery.js",
+    "pages/giclee.js": "pages/giclee.js",
+    "pages/index.js": "pages/index.js",
+    "pages/press/_uid.js": "pages/press/_uid.js",
+    "pages/press/index.js": "pages/press/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "10.js": "10.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/canvas.js": "pages/canvas.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/exhibitions.js": "pages/exhibitions.js.map",
+    "pages/gallery.js": "pages/gallery.js.map",
+    "pages/giclee.js": "pages/giclee.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/press/_uid.js": "pages/press/_uid.js.map",
+    "pages/press/index.js": "pages/press/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

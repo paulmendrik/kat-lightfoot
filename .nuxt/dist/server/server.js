@@ -2881,33 +2881,10 @@ async function createApp(ssrContext, config = {}) {
         "name": "mobile-web-app-capable",
         "content": "yes"
       }, {
-        "hid": "apple-mobile-web-app-title",
-        "name": "apple-mobile-web-app-title",
-        "content": "gallery"
-      }, {
-        "hid": "author",
-        "name": "author",
-        "content": "imwd"
-      }, {
         "hid": "og:type",
         "name": "og:type",
         "property": "og:type",
         "content": "website"
-      }, {
-        "hid": "og:title",
-        "name": "og:title",
-        "property": "og:title",
-        "content": "gallery"
-      }, {
-        "hid": "og:site_name",
-        "name": "og:site_name",
-        "property": "og:site_name",
-        "content": "gallery"
-      }, {
-        "hid": "og:description",
-        "name": "og:description",
-        "property": "og:description",
-        "content": "kat lightfoot gallery"
       }],
       "link": [{
         "rel": "icon",
@@ -2935,7 +2912,7 @@ async function createApp(ssrContext, config = {}) {
         "sizes": "512x512"
       }, {
         "rel": "manifest",
-        "href": "\u002F_nuxt\u002Fmanifest.ef7a4029.json",
+        "href": "\u002F_nuxt\u002Fmanifest.44156447.json",
         "hid": "manifest"
       }],
       "script": [{

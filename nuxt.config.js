@@ -1,4 +1,5 @@
 export default {
+  target: 'server',
   head: {
     title: "Kat Lightfoot",
     meta: [
