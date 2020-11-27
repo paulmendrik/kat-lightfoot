@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d83998ad-c4a3-4cf9-8d54-842994f49b53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/.nojekyll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/200.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/_nuxt/2013710714dcbec0e499d33ef63dd5c0.svg" beforeDir="false" />
@@ -190,6 +189,7 @@
       <workItem from="1605687124835" duration="1357000" />
       <workItem from="1606387411857" duration="289000" />
       <workItem from="1606405818330" duration="300000" />
+      <workItem from="1606464774825" duration="110000" />
     </task>
     <servers />
   </component>
