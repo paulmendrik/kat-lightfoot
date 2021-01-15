@@ -1,4 +1,7 @@
 {
+  "name": "gallery",
+  "short_name": "gallery",
+  "description": "kat lightfoot gallery",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.57dfb8.png",
