@@ -3,7 +3,8 @@
 <div class="column main">
 <div v-for="(slice, index) in slices" :key="'slice-' + index" >
 <template v-if="slice.slice_type === 'gallery' " >
-<prismic-rich-text :field="slice.primary.title" class="title"/>
+<h1 class="title">Canvas Prints</h1>
+<h2 class="subtitle">The canvas prints are all hand finished and signed in oil </h2>
 <grid :slice="slice"/>
 </template>
 </div>

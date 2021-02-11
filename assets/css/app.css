@@ -239,6 +239,28 @@ a.arrow:hover {
   line-height: 1.2;
 }
 
+h1.title {
+  padding-top: 1rem;
+  border-top: 0.0625rem solid #e5e5e5;
+  font-family: futura-pt, sans-serif;
+  font-size: 3rem;
+  font-variant: small-caps;
+  letter-spacing: .03rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2.subtitle {
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #e5e5e5;
+  font-family: futura-pt, sans-serif;
+  font-size: 2rem;
+  font-variant: small-caps;
+  letter-spacing: .03rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
 li.caption {
   margin-top: 0;
   list-style: none;

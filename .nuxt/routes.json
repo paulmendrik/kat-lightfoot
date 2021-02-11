@@ -2,70 +2,60 @@
   {
     "name": "prismic-preview",
     "path": "/preview",
-    "component": "/Users/paul/kat-lightfoot/.nuxt/prismic/pages/preview.vue",
-    "_name": "_36dc2082"
+    "component": "/Users/paul/kat-lightfoot/.nuxt/prismic/pages/preview.vue"
   },
   {
     "name": "about",
     "path": "/about",
     "component": "/Users/paul/kat-lightfoot/pages/about.vue",
-    "chunkName": "pages/about",
-    "_name": "_2dbd1e59"
+    "chunkName": "pages/about"
   },
   {
     "name": "canvas",
     "path": "/canvas",
     "component": "/Users/paul/kat-lightfoot/pages/canvas.vue",
-    "chunkName": "pages/canvas",
-    "_name": "_e30c8888"
+    "chunkName": "pages/canvas"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/Users/paul/kat-lightfoot/pages/contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_95287f28"
+    "chunkName": "pages/contact"
   },
   {
     "name": "exhibitions",
     "path": "/exhibitions",
     "component": "/Users/paul/kat-lightfoot/pages/exhibitions.vue",
-    "chunkName": "pages/exhibitions",
-    "_name": "_1a6d74d0"
+    "chunkName": "pages/exhibitions"
   },
   {
     "name": "gallery",
     "path": "/gallery",
     "component": "/Users/paul/kat-lightfoot/pages/gallery.vue",
-    "chunkName": "pages/gallery",
-    "_name": "_32e02a9e"
+    "chunkName": "pages/gallery"
   },
   {
     "name": "giclee",
     "path": "/giclee",
     "component": "/Users/paul/kat-lightfoot/pages/giclee.vue",
-    "chunkName": "pages/giclee",
-    "_name": "_ffb458e2"
+    "chunkName": "pages/giclee"
   },
   {
     "name": "press",
     "path": "/press",
     "component": "/Users/paul/kat-lightfoot/pages/press/index.vue",
-    "chunkName": "pages/press/index",
-    "_name": "_0b175352"
+    "chunkName": "pages/press/index"
   },
   {
     "name": "press-uid",
     "path": "/press/:uid",
     "component": "/Users/paul/kat-lightfoot/pages/press/_uid.vue",
-    "chunkName": "pages/press/_uid",
-    "_name": "_a374f07e"
+    "chunkName": "pages/press/_uid"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/paul/kat-lightfoot/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4d74f91e"
+    "chunkName": "pages/index"
   }
 ]

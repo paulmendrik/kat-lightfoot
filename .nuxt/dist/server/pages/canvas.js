@@ -67,17 +67,18 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/canvas.vue?vue&type=template&id=1395b9a4&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"columns is-centered"},[_vm._ssrNode("<div class=\"column main\">","</div>",_vm._l((_vm.slices),function(slice,index){return _vm._ssrNode("<div>","</div>",[(slice.slice_type === 'gallery' )?[_c('prismic-rich-text',{staticClass:"title",attrs:{"field":slice.primary.title}}),_vm._ssrNode(" "),_c('grid',{attrs:{"slice":slice}})]:_vm._e()],2)}),0)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/canvas.vue?vue&type=template&id=0419b0d8&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"columns is-centered"},[_vm._ssrNode("<div class=\"column main\">","</div>",_vm._l((_vm.slices),function(slice,index){return _vm._ssrNode("<div>","</div>",[(slice.slice_type === 'gallery' )?[_vm._ssrNode("<h1 class=\"title\">Canvas Prints</h1> <h2 class=\"subtitle\">The canvas prints are all hand finished and signed in oil </h2> "),_c('grid',{attrs:{"slice":slice}})]:_vm._e()],2)}),0)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/canvas.vue?vue&type=template&id=1395b9a4&
+// CONCATENATED MODULE: ./pages/canvas.vue?vue&type=template&id=0419b0d8&
 
 // EXTERNAL MODULE: ./components/Grid.vue + 4 modules
 var Grid = __webpack_require__(35);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/canvas.vue?vue&type=script&lang=js&
+//
 //
 //
 //
