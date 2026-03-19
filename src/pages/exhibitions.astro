@@ -1,0 +1,44 @@
+---
+import Base from '@/layouts/Base.astro';
+import { PortableText } from 'astro-portabletext';
+import { urlFor } from '../sanity/image';
+import { sanityClient } from "sanity:client";
+const exhibitions = await sanityClient.fetch(`*[_type == "exhibitions"] | order(order)`);
+
+Astro.response.headers.set("Cache-Control", "public, max-age=0, must-revalidate");
+Astro.response.headers.set("Netlify-CDN-Cache-Control", "public, durable, s-maxage=86400, stale-while-revalidate=604800");
+Astro.response.headers.set("Netlify-Cache-Tag", "page-exhibitions");
+
+---
+
+<Base title="Exhibitions" header="Exhibitions">
+
+<div class="prose text-zinc-500 w-full mb-8 max-w-none">
+{exhibitions.map((exhibition: any) => (
+<PortableText  value={exhibition.content} />
+))}
+</div>
+
+
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6 w-full" > 
+
+{exhibitions.map((exhibition: any, i: any) => (
+
+ 
+<figure class="exhibition" style={{ "--animation-order": i % 20 } as any} >
+{exhibition.order < 8 ?  
+<img 
+src={urlFor(exhibition.image).auto("format").maxWidth(500).format('webp').sharpen(80).url()}
+alt={exhibition.title} 
+/> 
+<figcaption class=' py-4 text-base uppercase text-slate-500 tracking-widest text-center' >{exhibition.title}</figcaption> 
+: null
+}
+</figure>
+
+
+
+))}
+</div>
+
+</Base>

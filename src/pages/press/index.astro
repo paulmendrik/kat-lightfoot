@@ -1,0 +1,51 @@
+---
+import Base from "@/layouts/Base.astro";
+import { urlFor } from "../../sanity/image";
+import { sanityClient } from "sanity:client";
+const press = await sanityClient.fetch(`*[_type == "press"] | order(order)`);
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set("Netlify-Cache-Tag", "press-list");
+
+---
+
+<Base title="Press" header="Press">
+  {
+    press.map((item: any) => (
+      <div class="flex flex-col lg:flex-row md:flex-row gap-4 w-full lg:py-8 md:py-8">
+        <div class="order-1 lg:w-1/4 lg:h-1/4 md:w-1/4 md:h-1/4 w-full">
+          <img
+            class="size-full object-cover"
+            src={urlFor(item.image)
+              .auto("format")
+              .maxWidth(500)
+              .format("webp")
+              .sharpen(80)
+              .url()}
+            alt={item.title}
+          />
+        </div>
+        <div class="order-2  lg:w-3/4 md:w-3/4 w-full">
+          <div class="flex flex-col h-full">
+            <div class="pb-4 md:text-2xl text-2xl font-normal text-zinc-700">
+              {item.title}
+            </div>
+            <div class=" prose text-zinc-500 max-w-none">
+              {item.intro}
+              <a class=" text-zinc-800" href={`press/${item.slug?.current}`}>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</Base>

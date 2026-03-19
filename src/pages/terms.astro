@@ -1,0 +1,29 @@
+---
+import Base from "@/layouts/Base.astro";
+import { PortableText } from "astro-portabletext";
+import { sanityClient } from "sanity:client";
+const terms = await sanityClient.fetch(`*[_type == "terms"]`);
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set("Netlify-Cache-Tag", "page-terms");
+
+---
+
+<Base title="Terms" header="Terms">
+  <div class="py-8 w-full">
+    {
+      terms.map((t: any) => (
+        <div class="prose text-zinc-600 max-w-none">
+          <PortableText value={t.content} />
+        </div>
+      ))
+    }
+  </div>
+</Base>

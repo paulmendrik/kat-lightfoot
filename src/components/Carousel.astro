@@ -1,0 +1,24 @@
+---
+
+import { urlFor } from '../sanity/image';
+import { sanityClient } from "sanity:client";
+const slides = await sanityClient.fetch(`*[_type == "slider"]`)
+
+---
+
+
+<div id="default-carousel" class="fixed top-0 left-0 h-screen w-screen z-10" data-carousel="slide">
+<div class="relative w-full h-full overflow-hidden">
+
+{slides.map((slide: any) => (
+<div class="hidden duration-700 ease-in-out w-screen h-screen" data-carousel-item>
+<img class="absolute hidden  lg:block md:block w-screen h-screen object-cover  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src={urlFor(slide.slide).url()} alt={slide.title} /> 
+<img class="absolute block lg:hidden md:hidden w-screen h-screen object-cover  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src={urlFor(slide.slide).url()} alt={slide.title} /> 
+</div>
+))}
+
+</div>
+</div>
+
+
+

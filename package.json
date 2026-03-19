@@ -1,0 +1,48 @@
+{
+  "name": "my-project",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^5.0.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/react": "^19.2.14",
+    "astro": "^6.0.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@astrojs/netlify": "^7.0.3",
+    "@astrojs/partytown": "^2.1.5",
+    "@astrojs/sitemap": "^3.7.1",
+    "@astrojs/ts-plugin": "^1.10.7",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/mdi-light": "^1.2.2",
+    "@iconify-json/uit": "^1.2.3",
+    "@iconify/tailwind": "^1.2.0",
+    "@philnash/astro-pagination": "^0.5.0",
+    "@portabletext/types": "^4.0.2",
+    "@sanity/astro": "^3.3.1",
+    "@sanity/image-url": "^2.0.3",
+    "@tailwindcss/typography": "^0.5.19",
+    "astro-font": "^1.1.0",
+    "astro-icon": "^1.1.5",
+    "astro-portabletext": "^0.13.0",
+    "astro-robots-txt": "^1.0.0",
+    "framer-motion": "^12.38.0",
+    "groq": "^5.16.0",
+    "hamburger-react": "^2.5.2",
+    "motion": "^12.36.0",
+    "sass": "^1.98.0",
+    "typescript": "^5.9.3",
+    "vanilla-cookieconsent": "^3.1.0"
+  }
+}

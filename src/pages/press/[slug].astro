@@ -1,0 +1,43 @@
+---
+import Base from "@/layouts/Base.astro";
+import { PortableText } from "astro-portabletext";
+import { urlFor } from "../../sanity/image";
+import { sanityClient } from "sanity:client";
+
+const { slug } = Astro.params;
+
+const item = await sanityClient.fetch(
+  `*[_type == "press" && slug.current == $slug][0]`,
+  { slug },
+);
+
+if (!item) return Astro.redirect("/404");
+
+const { title, image, content } = item;
+
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set("Netlify-Cache-Tag", `press-${slug}, press-list`);
+---
+
+<Base title={title} header={title}>
+  <div class="flex flex-col lg:flex-row w-full md:flex-row lg:py-8 md:py-8">
+    <div class="w-full">
+      <img
+        class="float-left lg:pr-6 md:pr-6 pb-6"
+        src={urlFor(image).maxWidth(400).format("webp").sharpen(80).url()}
+        alt={title}
+      />
+      <div class="prose text-zinc-500 max-w-none">
+        <PortableText value={content} />
+      </div>
+    </div>
+  </div>
+</Base>

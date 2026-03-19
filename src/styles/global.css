@@ -1,0 +1,232 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+html {
+    font: 1rem sans-serif;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 40;
+}
+
+
+.exhibition{
+    animation: fadeIn 0.2s calc(var(--animation-order) * 90ms) both ease-in;
+}
+
+.painting {
+    opacity: 0;
+}
+
+.active {
+    animation: scaleIn 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scaleIn {
+    0% {transform: scale(0); transform-origin: 50% 0%; opacity: 0.0;}
+    100% {transform: scale(1); transform-origin: 50% 0%; opacity: 1;}
+}
+
+.view {
+display: none;
+overflow: hidden;
+z-index: 4;
+&:first-of-type {
+    display: block;
+    z-index: 2;
+}
+&:target {
+    display: block;
+    animation: slide 1.5s ease-in;
+}
+}
+
+
+.cart {
+display: none;
+z-index: 2;
+&:first-of-type {
+    display: block;
+    z-index: 10;
+}
+&:target {
+    display: block;
+    z-index: 20;
+}
+}
+    
+
+@keyframes slide {
+  0% { transform: translateY(-1000px);}
+  100% { transform: translateY(0%);}
+}
+
+p.price::before {
+	content: 'Price: £ ';
+}
+	
+p.price::after {
+	content: '';
+}
+
+p.tubedprice::before {
+    content: 'Price in Tube:  £';
+}
+  
+p.mountedprice::before {
+    content: 'Mounted Price:  £';
+}
+  
+p.framedprice::before {
+    content: 'Framed Price:  £';
+}
+
+
+p.size::before {
+	content: 'Size: ';
+}
+	
+p.size::after {
+	content: ' cm';
+}
+
+p.printsize::before {
+    content: 'Print Size:  ';
+}
+    
+p.printsize::after {
+      content: ' cm';
+}
+
+p.mountedsize::before {
+    content: 'Mounted Size:  ';
+}
+    
+p.mountedsize::after {
+      content: ' cm';
+}
+  
+p.framedsize::before {
+    content: 'Framed Size:  ';
+}
+    
+p.framedsize::after {
+      content: ' cm';
+}
+
+
+.snipcart-button-link {
+	display: none !important;
+}
+
+
+#wallToggle {
+	display: none;
+}
+
+label {
+	cursor: pointer; 
+}
+
+#wallToggle:checked ~  .wall {
+animation: scale-in-center 0.25s linear 1s both;
+& .close {
+    display: block;
+    z-index: 500 !important;
+}
+}
+
+#wallToggle:not(:checked) ~ .wall {
+    scale: 0;
+    transition: all 2s;
+    & .close {
+        opacity: 0;
+    }
+    & .artwork {
+        width: 0;
+        height: 0;
+        transition: all 0.5s;
+    }
+    & .chair {
+        width: 0;
+        height: 0;
+        transition: all 0.5s;
+    }
+}
+
+.slide-in-fwd-center {
+animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-fwd-center {
+0% {transform: translateZ(-1400px); opacity: 0;}
+100% {transform: translateZ(0); opacity: 1;}
+}
+
+.scale-in-center {
+animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-out-center {
+    animation: scale-out-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes scale-in-center {
+0% {transform: scale(0); opacity: 1;}
+100% {transform: scale(1);opacity: 1;}
+}
+
+@keyframes scale-out-center {
+    0% {transform: scale(1); opacity: 1;}
+    100% {transform: scale(0);opacity: 0;}
+    }
+  
+
+.back {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagination nav { 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .pagination nav li {
+    display: inline;
+  }
+  
+  .pagination nav li em,
+  .pagination nav li .current{
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color: red;
+  }
+  
+  .pagination nav li a svg {
+    display: inline;
+    margin-top: -1px ;
+    vertical-align: middle;
+  }
+  
+  
+
+
+	
+  
+

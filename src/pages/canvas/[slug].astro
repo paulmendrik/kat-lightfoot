@@ -1,0 +1,86 @@
+---
+import { Picture } from 'astro:assets';
+import Back from '@/components/Back.astro';
+import { urlFor } from '@/sanity/image';
+import { sanityClient } from "sanity:client";
+import Details from "@/layouts/Details.astro";
+import Modal from "@/components/Modal.astro";
+import SnipCart from '@/components/SnipCart.astro';
+
+const { slug } = Astro.params;
+
+const item = await sanityClient.fetch(
+  `*[_type == "canvas" && slug.current == $slug][0]`,
+  { slug },
+);
+
+if (!item) return Astro.redirect("/404");
+
+
+const { title, painting, size, price, sold } = item;
+
+
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set("Netlify-Cache-Tag", `canvas-${slug}, canvas-list`);
+
+---
+
+<Details title={title} >
+
+<Back/>
+
+
+<div class="flex flex-col lg:flex-row md:flex-row w-full pt-24">
+<div class="aside order-2 pb-8 lg:order-1 md:order-1 lg:w-1/3 md:w-1/3 lg:pr-20 md:pr-8  w-full">
+<h1 class="prose prose-xl pb-6 mb-6 text-black uppercase tracking-widest border-b-2 border-slate-100 ">Katharine Lightfoot</h1>
+<p class="prose prose-lg py-2 text-black uppercase">{title}</p>
+{ size ?
+<p class="size prose prose-base py-2 text-zinc-500 uppercase">{size}</p>
+: null
+}
+
+{ price ? 
+<p class="price prose prose-base py-2 text-black uppercase ">{price}</p>
+: null
+}
+
+{sold ? 
+  <p class="sold prose prose-base py-2 text-zinc-600 uppercase">Sold</p>
+  : 
+
+
+<div class="cart py-4">
+<button 
+class="snipcart-add-item prose prose-sm py-2 px-4 border border-gray-200 uppercase bg-neutral-950 font-medium text-white tracking-widest w-full"
+data-item-id={slug}
+data-item-image={urlFor(painting).url()}
+data-item-name={title}
+data-item-url={`/canvas/${slug}`}
+data-item-max-quantity=1
+data-item-price={price}
+>
+Add to Cart
+</button>
+
+<Modal title={title} painting={painting} price={price} size={size} />
+</div>
+}
+
+</div>
+
+<div class="canvas order-1 pb-8 lg:order-2 md:order-2 lg:w-2/3 md:w-2/3 w-full" >
+<Picture class='view h-auto object-cover' src={urlFor(painting).format('webp').sharpen(80).url()} inferSize alt={title} /> 
+</div>
+
+</div>
+</Details>
+
+<SnipCart/>

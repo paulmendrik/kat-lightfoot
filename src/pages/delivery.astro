@@ -1,0 +1,29 @@
+---
+import Base from "@/layouts/Base.astro";
+import { PortableText } from "astro-portabletext";
+import { sanityClient } from "sanity:client";
+const shipping = await sanityClient.fetch(`*[_type == "shipping"]`);
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set("Netlify-Cache-Tag", "page-delivery");
+
+---
+
+<Base title="Delivery" header="Delivery">
+  <div class="py-8 w-full">
+    {
+      shipping.map((s: any) => (
+        <div class="prose  text-zinc-600 max-w-none">
+          <PortableText value={s.content} />
+        </div>
+      ))
+    }
+  </div>
+</Base>

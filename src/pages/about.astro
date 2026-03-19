@@ -1,0 +1,33 @@
+---
+import Base from '@/layouts/Base.astro';
+import { PortableText } from 'astro-portabletext';
+import { urlFor } from '../sanity/image';
+import { sanityClient } from "sanity:client";
+const about = await sanityClient.fetch(`*[_type == "about"]`)
+
+Astro.response.headers.set("Cache-Control", "public, max-age=0, must-revalidate");
+Astro.response.headers.set("Netlify-CDN-Cache-Control", "public, durable, s-maxage=86400, stale-while-revalidate=604800");
+Astro.response.headers.set("Netlify-Cache-Tag", "page-about");
+
+---
+
+<Base title="About" header="Biography" >
+
+
+<div class="about relative lg:flex lg:justify-between  w-full">
+{about.map((h: any) => (
+
+<div class="image lg:order-2 w-full lg:w-1/3 ml-0 lg:ml-6 mb-4 lg:mb-8 clear-both">
+<img src={urlFor(h.image).url()} alt={h.title} /> 
+</div>
+
+<div class="prose  prose-zinc lg:order-1 w-full lg:w-2/3 max-w-none">
+<PortableText  value={h.content} />
+</div>
+
+
+))}
+</div> 
+
+
+</Base>

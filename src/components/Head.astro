@@ -1,0 +1,29 @@
+---
+import { Navigation } from './Menu';
+const {color} = Astro.props;
+const {text} = Astro.props;
+const {border} = Astro.props;
+---
+<header class:list={["flex", "flex-row", "relative", "top-0", "w-full",  "bg-transparent", "start-0", "py-6", "lg:mb-8", "mb-6", "border-b-2", "border-slate-100", "lg:px-32", "md:px-16","px-6", "z-20", (border)]}> 
+<div class=" lg:basis-3/4 md:basis-3/4 basis-11/12"> 
+<a href="/" class:list={["prose", "uppercase", "pl-0", "lg:prose-2xl","md:prose-2xl", "prose-xl", "font-montserrat", (text)]}>
+Katharine Lightfoot
+</a>
+</div>
+<div class=" lg:basis-1/4 md:basis-1/4 basis-1/12">
+<Navigation color={color} client:visible />
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+

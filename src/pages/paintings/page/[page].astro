@@ -1,0 +1,108 @@
+---
+import type { GetStaticPaths } from "astro";
+import { Picture } from "astro:assets";
+import groq from "groq";
+import { urlFor } from "@/sanity/image";
+import { sanityClient } from "sanity:client";
+import Main from "@/layouts/Main.astro";
+import Pagination from "@philnash/astro-pagination";
+
+const PAGE_SIZE = 15;
+
+const currentPage = parseInt(Astro.params.page ?? "1");
+
+if (isNaN(currentPage) || currentPage < 1) return Astro.redirect("/paintings/");
+
+const offset = (currentPage - 1) * PAGE_SIZE;
+
+const [items, total] = await Promise.all([
+  sanityClient.fetch(
+    groq`*[_type == "paintings"] | order(order) [$offset...$end]`,
+    { offset, end: offset + PAGE_SIZE },
+  ),
+  sanityClient.fetch(groq`count(*[_type == "paintings"])`),
+]);
+
+if (!items.length) return Astro.redirect("/paintings/");
+
+const lastPage = Math.ceil(total / PAGE_SIZE);
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const paintings = await sanityClient.fetch(
+    groq`*[_type in ["paintings"]] | order(order)`,
+  );
+  return paginate(paintings, { pageSize: 15 });
+}) satisfies GetStaticPaths;
+
+const page = {
+  data: items,
+  currentPage,
+  lastPage,
+  url: {
+    current: `/paintings/page/${currentPage}`,
+    prev:
+      currentPage > 2
+        ? `/paintings/page/${currentPage - 1}`
+        : currentPage === 2
+          ? "/paintings/"
+          : undefined,
+    next:
+      currentPage < lastPage ? `/paintings/page/${currentPage + 1}` : undefined,
+  },
+};
+
+Astro.response.headers.set(
+  "Cache-Control",
+  "public, max-age=0, must-revalidate",
+);
+Astro.response.headers.set(
+  "Netlify-CDN-Cache-Control",
+  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+);
+Astro.response.headers.set(
+  "Netlify-Cache-Tag",
+  `pai ntings-list, paintings-pagination`,
+);
+---
+
+<Main title="Kat Lightfoot Paintings" header="Paintings">
+  <div class="gallery w-full">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 lg:gap-16 md:gap-8 gap-6 relative"
+    >
+      {
+        items.map((image: any) => (
+          <a
+            class="painting"
+            href={`/paintings/${image.slug?.current}`}
+            id={image.order}
+          >
+            <figure>
+              <Picture
+                class=" max-w-full overflow-hidden"
+                src={urlFor(image.painting).format("webp").sharpen(80).url()}
+                inferSize
+                alt={image.title}
+              />
+              <figcaption class=" py-4 text-sm uppercase text-zinc-500 tracking-widest text-center">
+                {image.title}
+              </figcaption>
+            </figure>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+
+  <div
+    class="pagination prose prose-xl flex justify-center relative h-auto max-w-none"
+  >
+    <Pagination
+      page={page}
+      firstPageUrl="/paintings/"
+      urlPattern="/paintings/page/{}"
+    />
+  </div>
+
+  <script src="../../../utils/trigger.js"></script>
+</Main>
