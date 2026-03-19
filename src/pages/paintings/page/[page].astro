@@ -1,108 +1,120 @@
 ---
-import type { GetStaticPaths } from "astro";
 import { Picture } from "astro:assets";
+import { Icon } from 'astro-icon/components'
 import groq from "groq";
 import { urlFor } from "@/sanity/image";
 import { sanityClient } from "sanity:client";
 import Main from "@/layouts/Main.astro";
-import Pagination from "@philnash/astro-pagination";
 
 const PAGE_SIZE = 15;
 
-const currentPage = parseInt(Astro.params.page ?? "1");
+const pageParam = Astro.params.page;
+const currentPage = Math.max(1, parseInt(pageParam ?? "1", 10));
 
-if (isNaN(currentPage) || currentPage < 1) return Astro.redirect("/paintings/");
+if (isNaN(currentPage)) {
+return Astro.redirect("/paintings/1");
+}
 
-const offset = (currentPage - 1) * PAGE_SIZE;
-
-const [items, total] = await Promise.all([
-  sanityClient.fetch(
-    groq`*[_type == "paintings"] | order(order) [$offset...$end]`,
-    { offset, end: offset + PAGE_SIZE },
-  ),
-  sanityClient.fetch(groq`count(*[_type == "paintings"])`),
+const [paintings, totalResult] = await Promise.all([
+sanityClient.fetch(
+groq`*[_type in ["paintings"]] | order(order) [$start...$end]`,
+{
+start: (currentPage - 1) * PAGE_SIZE,
+end: currentPage * PAGE_SIZE,
+},
+),
+sanityClient.fetch(groq`count(*[_type in ["paintings"]])`),
 ]);
 
-if (!items.length) return Astro.redirect("/paintings/");
+const totalPages = Math.ceil(totalResult / PAGE_SIZE);
 
-const lastPage = Math.ceil(total / PAGE_SIZE);
-
-export const getStaticPaths = (async ({ paginate }) => {
-  const paintings = await sanityClient.fetch(
-    groq`*[_type in ["paintings"]] | order(order)`,
-  );
-  return paginate(paintings, { pageSize: 15 });
-}) satisfies GetStaticPaths;
-
-const page = {
-  data: items,
-  currentPage,
-  lastPage,
-  url: {
-    current: `/paintings/page/${currentPage}`,
-    prev:
-      currentPage > 2
-        ? `/paintings/page/${currentPage - 1}`
-        : currentPage === 2
-          ? "/paintings/"
-          : undefined,
-    next:
-      currentPage < lastPage ? `/paintings/page/${currentPage + 1}` : undefined,
-  },
-};
+if (currentPage > totalPages && totalPages > 0) {
+return Astro.redirect(`/paintings/${totalPages}`);
+}
 
 Astro.response.headers.set(
-  "Cache-Control",
-  "public, max-age=0, must-revalidate",
+"Cache-Control",
+"public, max-age=0, must-revalidate",
 );
 Astro.response.headers.set(
-  "Netlify-CDN-Cache-Control",
-  "public, durable, s-maxage=86400, stale-while-revalidate=604800",
+"Netlify-CDN-Cache-Control",
+"public, durable, s-maxage=86400, stale-while-revalidate=604800",
 );
 Astro.response.headers.set(
-  "Netlify-Cache-Tag",
-  `pai ntings-list, paintings-pagination`,
+"Netlify-Cache-Tag",
+"paintings-list, paintings-pagination",
 );
 ---
 
 <Main title="Kat Lightfoot Paintings" header="Paintings">
-  <div class="gallery w-full">
-    <div
-      class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 lg:gap-16 md:gap-8 gap-6 relative"
-    >
-      {
-        items.map((image: any) => (
-          <a
-            class="painting"
-            href={`/paintings/${image.slug?.current}`}
-            id={image.order}
-          >
-            <figure>
-              <Picture
-                class=" max-w-full overflow-hidden"
-                src={urlFor(image.painting).format("webp").sharpen(80).url()}
-                inferSize
-                alt={image.title}
-              />
-              <figcaption class=" py-4 text-sm uppercase text-zinc-500 tracking-widest text-center">
-                {image.title}
-              </figcaption>
-            </figure>
-          </a>
-        ))
-      }
-    </div>
-  </div>
+<div class="gallery w-full">
+<div
+class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 lg:gap-16 md:gap-8 gap-6 relative"
+>
+{
+paintings.map((image: any) => (
+<a
+class="painting"
+href={`/paintings/${image.slug?.current}`}
+id={image.order}
+>
+<figure>
+<Picture
+class="max-w-full overflow-hidden"
+src={urlFor(image.painting).format("webp").sharpen(80).url()}
+inferSize
+alt={image.title}
+/>
+<figcaption class="py-4 text-sm uppercase text-zinc-500 tracking-widest text-center">
+{image.title}
+</figcaption>
+</figure>
+</a>
+))
+}
+</div>
+</div>
 
-  <div
-    class="pagination prose prose-xl flex justify-center relative h-auto max-w-none"
-  >
-    <Pagination
-      page={page}
-      firstPageUrl="/paintings/"
-      urlPattern="/paintings/page/{}"
-    />
-  </div>
+<div
+class="pagination prose prose-xl flex justify-center relative h-auto max-w-none"
+>
+{
+totalPages > 1 && (
+<nav aria-label="paintings pagination">
+<ul>
+{currentPage > 1 && (
+<li> 
+<a href={`/paintings/page/${currentPage - 1}`} class="" aria-label="Previous page" >
+<Icon size={18} name="mdi:chevron-double-left"/>
+</a>
+</li>
+)}
 
-  <script src="../../../utils/trigger.js"></script>
+{Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+<li>
+<a href={`/paintings/page/${page}`} 
+class={`number w-6 h-6 text-base text-center ${page === currentPage ? "current" : ""}`} 
+aria-current={page === currentPage ? "page" : undefined}
+>
+{page}
+</a>
+</li>
+))}
+
+{currentPage < totalPages && (
+<li>
+<a href={`/paintings/page/${currentPage + 1}`} class="number w-6 h-6 text-base text-center" aria-label="Next page">
+<Icon size={18} name="mdi:chevron-double-right"/>
+</a>
+</li>
+)}
+</ul>
+</nav>
+)
+}
+</div>
+
+<script src="../../../utils/trigger.js"></script>
 </Main>
+
+
