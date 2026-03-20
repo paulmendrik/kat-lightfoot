@@ -71,7 +71,7 @@ tagsToPurge.push("page-contact");
 } else if (_type === "exhibitions") {
 tagsToPurge.push("page-exhibitions");
 
-} else if (_type === "privaccy") {
+} else if (_type === "privacy") {
 tagsToPurge.push("page-privacy");
 }
 
