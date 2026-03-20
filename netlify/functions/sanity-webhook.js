@@ -76,6 +76,7 @@ tagsToPurge.push("page-privacy");
 }
 
 if (!tagsToPurge.length) {
+console.log(`Unmatched _type: "${_type}" — nothing purged`);
 return new Response(
 JSON.stringify({ message: "No matching type, nothing purged" }),
 { status: 200 }

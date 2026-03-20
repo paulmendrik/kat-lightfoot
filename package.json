@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@astrojs/react": "^5.0.0",
+    "@netlify/functions": "^5.1.5",
+    "@sanity/webhook": "^4.0.4",
     "@tailwindcss/vite": "^4.2.1",
     "@types/react": "^19.2.14",
     "astro": "^6.0.4",
