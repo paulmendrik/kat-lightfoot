@@ -13,7 +13,7 @@ export default defineConfig({
   output: 'server',
   adapter: netlify(),
   image: { remotePatterns: [{ protocol: 'https', hostname: 'cdn.sanity.io', }] },
-  site: 'https://www.katlightfoot.com',
+  site: 'https://kat-lightfoot.netlify.app',
   vite: { plugins: [tailwindcss()] },
   integrations: [
     react(),
